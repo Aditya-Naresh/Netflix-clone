@@ -34,3 +34,13 @@
 .smallPoster:hover{
     transform: scale(1.2);
 }
+
+.video {
+    width:  auto;
+    height: auto;
+    cursor: pointer;
+  }
+
+  .title{
+    font-size: 1rem;
+  }
