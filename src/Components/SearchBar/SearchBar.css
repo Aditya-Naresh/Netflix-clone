@@ -1,27 +1,98 @@
-.input-wrapper{
-    background-color: white;
-    width: 100%;
-    border-radius: 10px;
-    height: 2rem;
-    padding: 0 15px;
-    box-shadow: 0 0 8px #ddd;
+/* SearchBar.css */
+
+/* Styles for the search input */
+.input-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
     display: flex;
     align-items: center;
-}
-
-input {
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  
+  #search-icon {
+    margin-right: 8px;
+    color: white;
+  }
+  
+  input[type="text"] {
     background-color: transparent;
     border: none;
-    height: 100%;
-    font-size: 1.25rem;
-    width: 100%;
-    margin-left: 5px;
-}
-
-input:focus {
     outline: none;
-}
-
-#search-icon {
-    color: royalblue;
-}
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    width: 200px;
+    transition: all 0.2s ease;
+  }
+  
+  input[type="text"]:focus {
+    width: 300px;
+  }
+  
+  /* Styles for the search dropdown */
+  .dropdown {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .dropdown li {
+    border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dropdown li:hover {
+    background-color: #e6e6e6;
+  }
+  
+  
+  
+  /* Styles for the selected item */
+  .selected-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  
+  .selected-item span {
+    margin-right: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .selected-item button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .selected-item button:hover {
+    color: #E50914;
+  }
+  
